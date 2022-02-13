@@ -32,6 +32,12 @@ button {
     box-sizing: border-box;
     background: #C0DBD9;
 }
+@media (max-width: 868px) {
+    [class*="__container"] {
+        width: 768px;
+    }
+}
+
 
 /* ================== Pop-up ================== */
 
@@ -108,6 +114,11 @@ button {
     grid-template-rows: repeat(2, 198px);
     row-gap: 15px;
     margin-bottom: 15px;
+}
+@media (max-width: 868px) {
+    .main__green {
+        grid-template-columns: 185px 1fr 80px;
+    }
 }
 .main__green-block {
     position: relative;
@@ -192,10 +203,14 @@ button {
     column-gap: 30px;
     padding: 30px 30px;
 }
-.main__blue-block {
-    background: #0D89B0;
-    width: 255px;
-    height: 199px;
+@media (max-width: 868px) {
+    .main__blue {
+        column-gap: 15px;
+        padding: 15px 15px;
+    }
+}
+.main__blue-block img{
+    width: 100%;
 }
 
 /* ================== Footer ================== */
