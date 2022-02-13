@@ -27,11 +27,10 @@ button {
 }
 [class*="__container"] {
     width: 1200px;
-
     margin: 0 auto;
     padding: 0px 15px;
-    background: #C0DBD9;
     box-sizing: border-box;
+    background: #C0DBD9;
 }
 
 /* ================== Pop-up ================== */
@@ -86,22 +85,20 @@ button {
 }
 
 /* ================== Header ================== */
-.header {
-}
+
 .header__content {
     width: 100%;
     height: 100px;
     background: #7FAFF7;
-    margin-bottom: 15px;
 }
 
 /* ================== Main ================== */
 
-.main {
-    width: 100%;
-}
 .main__content {
     width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 100px;
 }
 .main__green {
     background: #B3F95A;
@@ -199,12 +196,9 @@ button {
     background: #0D89B0;
     width: 255px;
     height: 199px;
-    margin-bottom: 100px;
 }
 
 /* ================== Footer ================== */
-.footer {
-}
 .footer__content {
     width: 100%;
     height: 100px;
