@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    position: relative;
+    z-index: 0;
+    min-height: 1000px;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: calc(23 / 20 * 100%);
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 1 auto;
+}
+button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+[class*="__container"] {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+    background: #C0DBD9;
+    box-sizing: border-box;
+}
+
+/* ================== Pop-up ================== */
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: -50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: #FFFFFF;
+    transition: top 0.5s ease 0s;
+}
+.popup__window {
+    position: absolute;
+    font-size: 53px;
+    line-height: calc(53 / 62 * 100%);
+    color: #000000;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.popup__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px;
+    text-decoration: none;
+}
+.popup__button-open {
+    background: #A5C7F9;
+    margin: 30.5px 0px 30.5px 30px;
+    width: 206px;
+    height: 39px;
+    color: white;
+    line-height: calc(23 / 20 * 100% );
+    font-size: 20px;
+}
+#open:target {
+    top: 50%;
+}
+.popup__button-close {
+    background: #7FAFF6;
+    width: 43px;
+    height: 39px;
+    color: white;
+    font-size: 20px;
+    line-height: calc(23 / 20 * 100%);
+    cursor: pointer;
+}
+
+/* ================== Header ================== */
+.header {
+}
+.header__content {
+    width: 100%;
+    height: 100px;
+    background: #7FAFF7;
+    margin-bottom: 15px;
+}
+
+/* ================== Main ================== */
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+.main__content {
+    width: 100%;
+}
+.main__green {
+    background: #B3F95A;
+    display: grid;
+    grid-template-columns: 390px 590px 160px;
+    column-gap: 15px;
+    grid-template-rows: repeat(2, 198px);
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+.main__green-block {
+    position: relative;
+    background: #8AD191;
+}
+#green-1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+#green-1::before { 
+    content: "1";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: calc(62 / 53 * 100%);
+}
+#green-2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#green-2::before { 
+    content: "2";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: calc(62 / 53 * 100%);
+}
+#green-3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+#green-3::before { 
+    content: "3";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: calc(62 / 53 * 100%);
+}
+#green-4 { 
+    grid-area: 2 / 1 / 3 / 3; 
+}
+#green-4::before { 
+    content: "4";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: calc(62 / 53 * 100%);
+}
+#green-5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+#green-5::before { 
+    content: "5";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: calc(62 / 53 * 100%);
+}
+
+.main__blue {
+    background: #88B5BF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 30px;
+    padding: 30px 30px;
+}
+.main__blue-block {
+    background: #0D89B0;
+    width: 255px;
+    height: 199px;
+    margin-bottom: 100px;
+}
+
+/* ================== Footer ================== */
+.footer {
+}
+.footer__content {
+    width: 100%;
+    height: 100px;
+    background: #7FAFF7;
+}
